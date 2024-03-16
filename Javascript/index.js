@@ -74,8 +74,9 @@ for(let i=0;i<300;i++){
 
 function animate(){
     requestAnimationFrame(animate);
+    c.fillStyle = "#742929"
     // Reduce opacity to create fading effect
-    c.fillStyle = "rgba(255, 255, 255, 0.1)";
+    c.fillStyle = "rgba(226, 217, 255, 0.1)";
     c.fillRect(0, 0, canvas.width, canvas.height);
     particles.forEach((particle)=>{
         particle.update(particles)
